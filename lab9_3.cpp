@@ -1,16 +1,3 @@
-/*
-"Enter your age: "
-"Enter your height: "
-"Enter your bounty: "
-"Your character = "
-"Zoro"
-"Sanji"
-"Usopp"
-"Chopper"
-"Franky"
-"Brook"
-"Jinbe"
-*/
 #include<iostream>
 #include<cmath>
 #include<string>
@@ -22,7 +9,7 @@ int main()
     string _char;
     cout << "Enter your age: ";
     cin >> age;
-    cin.ignore();
+    
     if(age<=25)
     {
       cout << "Enter your height: ";
@@ -40,7 +27,9 @@ int main()
         if (b > 11*pow(10,8)){
             _char ="Zoro";
 
-        } else _char ="Sanji";
+        } else {
+            _char ="Sanji";
+        }
       }
     
     }else if( age <= 60) 
